@@ -1,0 +1,14 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container">
+        <a class="navbar-brand">Wheel Registry</a>
+        <ul class="nav navbar-nav" routerLinkActive="active">
+            <li class="nav-item"><a class="nav-link" routerLink="addbus">Add Bus</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="addwheel">Add Wheel</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="searchtyre">View Wheel</a></li>
+            <!--<li class="nav-item"><a class="nav-link" [routerLink]="['/showwheel/',id]">View Wheel</a></li>-->
+             <li class="nav-item"><a class="nav-link" routerLink="searchbus">View Bus</a></li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

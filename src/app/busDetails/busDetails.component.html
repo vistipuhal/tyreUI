@@ -1,0 +1,43 @@
+<div class="container" *ngIf = "bus != undefined">
+    <h1>Bus Form</h1>
+    <form #busForm="ngForm" (ngSubmit)="deleteData()">
+    <div class="form-group">
+        <label for="busNum">Bus Number</label>
+        <input type="text" name = "busNum" class="form-control" id="busNum" value = {{bus.busNum}}>
+    </div>
+
+
+      <div class="form-group">
+        <label for="tyreFl">Tyre FL</label>
+        <input type="text" name="tyreFl" class="form-control" id="tyreFl" value = {{bus.tyreFl}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreFr">Tyre FR</label>
+        <input type="text" name="tyreFr" class="form-control" id="tyreFr" value = {{bus.tyreFr}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRrr">Tyre RRR</label>
+        <input type="text" name="tyreRrr" class="form-control" id="tyreRrr" value = {{bus.tyreRrr}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRrl">Tyre RRl</label>
+        <input type="text" name="tyreRrl" class="form-control" id="tyreRrl"  value = {{bus.tyreRrl}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRlr">Tyre RLR</label>
+        <input type="text" name="tyreRlr" class="form-control" id="tyreRlr"  value = {{bus.tyreRlr}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRll">Tyre RLL</label>
+        <input type="text" name="tyreRll" class="form-control" id="tyreRll" value = {{bus.tyreRll}}>
+      </div>
+
+      <button type="submit" class="btn btn-success">Delete</button>
+
+    </form>
+</div>

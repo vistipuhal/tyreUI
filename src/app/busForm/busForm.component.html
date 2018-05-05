@@ -1,0 +1,45 @@
+<div class="container">
+    <h3>Bus Form</h3>
+    <form  #busForm="ngForm" (ngSubmit)="postBusData(busForm)">
+    <div class="form-group bNum">
+        <label for="busNum">Bus Number</label>
+        <input type="text" name = "busNum" class="form-control" id="busNum" required ngModel>
+      </div>
+
+    <div class="gr1">      
+      <div class="form-group">
+        <label for="tyreFl">Tyre FL</label>
+        <input type="text" name="tyreFl" class="form-control" id="tyreFl" required ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreFr">Tyre FR</label>
+        <input type="text" name="tyreFr" class="form-control" id="tyreFr" ngModel required>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRrr">Tyre RRR</label>
+        <input type="text" name="tyreRrr" class="form-control" id="tyreRrr" ngModel required>
+      </div>
+    </div>
+    <div class="gr2">
+      <div class="form-group">
+        <label for="tyreRrl">Tyre RRl</label>
+        <input type="text" name="tyreRrl" class="form-control" id="tyreRrl"  ngModel required>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRlr">Tyre RLR</label>
+        <input type="text" name="tyreRlr" class="form-control" id="tyreRlr"  ngModel required>
+      </div>
+
+      <div class="form-group">
+        <label for="tyreRll">Tyre RLL</label>
+        <input type="text" name="tyreRll" class="form-control" id="tyreRll" ngModel required>
+      </div>
+
+    </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>

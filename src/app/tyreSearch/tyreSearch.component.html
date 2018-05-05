@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>Tyre Details</h3>
+    <form  #tyreSearch="ngForm" (ngSubmit)="searchTyre(tyreSearch)">
+      <div class="form-group">
+        <label for="tyreNum">Tyre Number</label>
+        <input type="text" name=  "tyreNum" class="form-control" id="tyreNum" placeholder = "Enter tyre number" ngModel>
+      </div>
+          <button type="submit" class="btn btn-success">Search</button>
+    </form>
+</div>

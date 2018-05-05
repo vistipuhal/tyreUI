@@ -1,0 +1,88 @@
+<div class="container">
+    <h3>Tyre Form</h3>
+    <form #tyreForm="ngForm" (ngSubmit)="postData(tyreForm)">
+      <div class="form-group" >
+        <label for="tyreNum">Tyre Number</label>
+        <input  name= "tyreNum" type="text" class="form-control" id="tyreNum" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="manufacDate">Manufacture Date</label>
+        <input type="text" name= "manufacDate" class="form-control" id="manufacDate" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="busNum">Bus Number</label>
+        <input type="text" name = "busNum" class="form-control" id="busNum" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="busPos">Bus Position</label>
+        <select class="form-control" name = "busPos" id="busPos" ngModel>
+        <option  value = "fr">Front Right</option>
+        <option  value = "fl">Front Left</option>                               
+        <option  value = "rrr">Rear Right Right</option>
+        <option  value = "rrl">Rear Right Left</option>
+        <option  value = "rlr">Rear Left Right</option>
+        <option  value = "rll">Rear Left Left </option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="fitDate">Fit Date</label>
+        <input type="text" name = "fitDate" class="form-control" id="fitDate" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="kms">KMS</label>
+        <input type="text" name = "kms" class="form-control" id="kms" ngModel>
+      </div>
+      
+      <div class="form-group">
+        <label for="tyreTemp">Tyre Temperature</label>
+        <input type="text" name = "tyreTemp" class="form-control" id="tyreTemp" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="tyrePress">Tyre Pressure</label>
+        <input type="text" name = "tyrePress" class="form-control" id="tyrePress" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd1">NSD1</label>
+        <input type="text" name = "nsd1" class="form-control" id="nsd1" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd2">NSD2</label>
+        <input type="text" name ="nsd2" class="form-control" id="nsd2" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd3">NSD3</label>
+        <input type="text" name = "nsd3" class="form-control" id="nsd3" ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="kmsFit">KMS Fit</label>
+        <input type="text" name ="kmsFit" class="form-control" id="kmsFit"  ngModel>
+      </div>
+      
+      <div class="form-group">
+        <label for="kmsRemoved">KMS Removed</label>
+        <input type="text" name ="kmsRemoved" class="form-control" id="kmsRemoved"  ngModel>
+      </div>
+      
+      <div class="form-group">
+        <label for="tyreCondition">Tyre Condition</label>
+        <select class="form-control" name = "tyreCondition" id="tyreCondition" ngModel>
+        <option  value = "bead">Bead</option>
+        <option  value = "flat">Flat</option>                               
+        <!--<option *ngFor="let pow of powers" [value]="pow">100</option>-->
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-success" >Submit</button>      
+    </form>
+
+</div>

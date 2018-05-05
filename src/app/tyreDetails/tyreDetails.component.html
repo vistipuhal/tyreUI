@@ -1,0 +1,90 @@
+<div class="container" *ngIf = "tyre != undefined">
+    <h3>Tyre Details</h3>
+    <form #tyreForm="ngForm" (ngSubmit)="deleteData()">
+      <div class="form-group">
+        <label for="tyreNum">Tyre Number</label>
+        <input type="text" class="form-control" id="tyreNum" value = {{tyre.tyreNum}} >
+      </div>
+
+      <div class="form-group">
+        <label for="manufacDate">Manufacture Date</label>
+        <input type="text" class="form-control" id="manufacDate"
+           value = {{tyre.manufacDate}}>
+           <!--value = {{tyre.manufacDate |  date:'dd/MM/yyyy'}}>-->
+      </div>
+
+      <div class="form-group">
+        <label for="busnum">Bus Number</label>
+        <input type="text" class="form-control" id="busNum" value = {{tyre.busNum}}>
+      </div>
+
+      <div class="form-group">
+        <label for="busPos">Bus Position</label>
+        <select class="form-control" id="busPos" required>
+        <option  [value]="pow">Front Right</option>
+        <option  [value]="pow">Front Left</option>                               
+        <option  [value]="pow">Rear Right Right</option>
+        <option  [value]="pow">Rear Right Left</option>
+        <option  [value]="pow">Rear Left Right</option>
+        <option  [value]="pow">Rear Left Left </option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="fitDate">Fit Date</label>
+        <input type="text" class="form-control" id="fitDate" value = {{tyre.fitDate}}>
+      </div>
+
+      <div class="form-group">
+        <label for="kms">KMS</label>
+        <input type="text" class="form-control" id="kms" value = {{tyre.kms}}>
+      </div>
+      
+      <div class="form-group">
+        <label for="tyreTemp">Tyre Temperature</label>
+        <input type="text" class="form-control" id="tyreTemp" value = {{tyre.tyreTemp}}>
+      </div>
+
+      <div class="form-group">
+        <label for="tyrePress">Tyre Pressure</label>
+        <input type="text" class="form-control" id="tyrePress" value = {{tyre.tyrePress}}>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd1">NSD1</label>
+        <input type="text" class="form-control" id="nsd1" value = {{tyre.nsd1}}>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd2">NSD2</label>
+        <input type="text" class="form-control" id="nsd2" value = {{tyre.nsd2}}>
+      </div>
+
+      <div class="form-group">
+        <label for="nsd3">NSD3</label>
+        <input type="text" class="form-control" id="nsd3" value = {{tyre.nsd3}}>
+      </div>
+
+      <div class="form-group">
+        <label for="kmsFit">kmsFit</label>
+        <input type="text" class="form-control" id="kmsFit" value = {{tyre.kmsFit}}>
+      </div>
+      
+      <div class="form-group">
+        <label for="kmsRemoved">kmsRemoved</label>
+        <input type="text" class="form-control" id="kmsRemoved" value = {{tyre.kmsRemoved}}>
+      </div>
+      
+      <div class="form-group">
+        <label for="power">Tyre Condition</label>
+        <select class="form-control" id="tyreCondition" required >
+        <option  [value]="pow">Bead</option>
+        <option  [value]="pow">Flat</option>                               
+        <!--<option *ngFor="let pow of powers" [value]="pow">100</option>-->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success">Delete</button>
+
+    </form>
+
+</div>
