@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     TyreDetailsComponent,
     BusDetailsComponent,
     TyreSearchComponent,
-    BusSearchComponent
+    BusSearchComponent,
   ],
   imports: [
     BrowserModule,
