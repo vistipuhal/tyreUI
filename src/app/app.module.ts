@@ -12,7 +12,7 @@ import { WheelFormComponent } from './wheelForm/wheelForm.component';
 import { BusFormComponent } from './busForm/busForm.component';
 import { TyreDetailsComponent } from './tyreDetails/tyreDetails.component';
 import { TyreSearchComponent } from './tyreSearch/tyreSearch.component';
-import { BusSearchComponent } from './busSearch/busSearch.component';
+// import { BusSearchComponent } from './busSearch/busSearch.component';
 import { BusDetailsComponent } from './busDetails/busDetails.component';
 import {MessageService} from './service/message.service';
 
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   { path: 'showwheel/:id',   component: TyreDetailsComponent },  
   { path: 'showbus/:id',   component: BusDetailsComponent },  
   { path: 'searchtyre',   component: TyreSearchComponent },  
-  { path: 'searchbus',   component: BusSearchComponent },  
+  // { path: 'searchbus',   component: BusSearchComponent },  
   // { path: '',
   //   redirectTo: '/heroes',
   //   pathMatch: 'full'
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     TyreDetailsComponent,
     BusDetailsComponent,
     TyreSearchComponent,
-    BusSearchComponent,
+    // BusSearchComponent,
   ],
   imports: [
     BrowserModule,
